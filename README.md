@@ -11,4 +11,4 @@ Teachers:
 
 
 
-1: https://uppsala.instructure.com/courses/67276
+[1]: https://uppsala.instructure.com/courses/67276
