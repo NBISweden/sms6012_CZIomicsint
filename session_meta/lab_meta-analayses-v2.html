@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Ashfaq Ali • 08-Sep-2021" />
+<meta name="author" content="Ashfaq Ali • 22-Apr-2022" />
 
 
 <title>Meta analyses of omics data</title>
@@ -325,7 +325,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Meta analyses of omics data</h1>
 <h3 class="subtitle">Workshop on Omics Integration</h3>
-<h4 class="author"><b>Ashfaq Ali</b> • 08-Sep-2021</h4>
+<h4 class="author"><b>Ashfaq Ali</b> • 22-Apr-2022</h4>
 
 </div>
 
@@ -969,7 +969,7 @@ using <strong>“MetaPath”</strong> package.</p>
 <li><p>Perform DE meta analyses using any two methods among “AW-Fisher”,
 “FEM,”REM and “minMCC” and compare the number of differentially
 expressed genes detected at FDR &lt;0.05. Take a look at the
-/Users/cob-aaf/Library/Application Support/renv/cache/v5/R-4.1/x86_64-apple-darwin17.0/MetaDE/2.2.3/8598944739859703e37b4623921341ac/MetaDE/help/MetaDE function to change the parameters.</p></li>
+/Users/cob-aaf/Library/Application Support/renv/cache/v5/R-4.1/aarch64-apple-darwin20/MetaDE/2.2.3/8598944739859703e37b4623921341ac/MetaDE/help/MetaDE function to change the parameters.</p></li>
 <li><p>Perform pathway analyses based one of the methods you tried and see
 whether any differences at pathway level were detected.</p></li>
 </ul>
@@ -1223,13 +1223,13 @@ R
 <div class="block-title small">
 Output
 </div>
-<pre><code>## R version 4.1.0 (2021-05-18)
-## Platform: x86_64-apple-darwin17.0 (64-bit)
-## Running under: macOS Big Sur 10.16
+<pre><code>## R version 4.1.2 (2021-11-01)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Monterey 12.1
 ## 
 ## Matrix products: default
-## BLAS:   /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRblas.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -1263,48 +1263,49 @@ Output
 ##  [3] class_7.3-19                XVector_0.32.0             
 ##  [5] GenomicRanges_1.44.0        fs_1.5.0                   
 ##  [7] bit64_4.0.5                 fansi_0.5.0                
-##  [9] splines_4.1.0               cachem_1.0.6               
+##  [9] splines_4.1.2               cachem_1.0.6               
 ## [11] geneplotter_1.70.0          jsonlite_1.7.2             
 ## [13] png_0.1-7                   shiny_1.6.0                
-## [15] compiler_4.1.0              httr_1.4.2                 
-## [17] Matrix_1.3-4                fastmap_1.1.0              
-## [19] limma_3.48.3                later_1.3.0                
-## [21] htmltools_0.5.2             tools_4.1.0                
-## [23] gtable_0.3.0                glue_1.4.2                 
-## [25] GenomeInfoDbData_1.2.6      Rcpp_1.0.7                 
-## [27] jquerylib_0.1.4             vctrs_0.3.8                
-## [29] Biostrings_2.60.2           xfun_0.25                  
-## [31] stringr_1.4.0               openxlsx_4.2.4             
-## [33] mime_0.11                   lifecycle_1.0.0            
-## [35] renv_0.14.0                 gtools_3.9.2               
-## [37] edgeR_3.34.0                zlibbioc_1.38.0            
-## [39] MASS_7.3-54                 zoo_1.8-9                  
-## [41] scales_1.1.1                promises_1.2.0.1           
-## [43] MatrixGenerics_1.4.3        SummarizedExperiment_1.22.0
-## [45] RColorBrewer_1.1-2          yaml_2.2.1                 
-## [47] quantmod_0.4.18             curl_4.3.2                 
-## [49] memoise_2.0.0               sass_0.4.0                 
-## [51] rpart_4.1-15                stringi_1.7.4              
-## [53] RSQLite_2.2.8               highr_0.9                  
-## [55] TTR_0.24.2                  caTools_1.18.2             
-## [57] zip_2.2.0                   BiocParallel_1.26.2        
-## [59] GenomeInfoDb_1.28.2         rlang_0.4.11               
-## [61] pkgconfig_2.0.3             matrixStats_0.60.1         
-## [63] bitops_1.0-7                evaluate_0.14              
-## [65] ROCR_1.0-11                 bit_4.0.4                  
-## [67] samr_3.0                    DESeq2_1.32.0              
-## [69] R6_2.5.1                    combinat_0.0-8             
-## [71] DelayedArray_0.18.0         DBI_1.1.1                  
-## [73] withr_2.4.2                 pillar_1.6.2               
-## [75] xts_0.12.1                  survival_3.2-13            
-## [77] KEGGREST_1.32.0             abind_1.4-5                
-## [79] RCurl_1.98-1.4              tibble_3.1.4               
-## [81] crayon_1.4.1                shinyFiles_0.9.0           
-## [83] KernSmooth_2.23-20          utf8_1.2.2                 
-## [85] rmarkdown_2.10              locfit_1.5-9.4             
-## [87] blob_1.2.2                  digest_0.6.27              
-## [89] xtable_1.8-4                httpuv_1.6.2               
-## [91] munsell_0.5.0               bslib_0.2.5.1</code></pre>
+## [15] BiocManager_1.30.16         compiler_4.1.2             
+## [17] httr_1.4.2                  Matrix_1.3-4               
+## [19] fastmap_1.1.0               limma_3.48.3               
+## [21] later_1.3.0                 htmltools_0.5.2            
+## [23] tools_4.1.2                 gtable_0.3.0               
+## [25] glue_1.4.2                  GenomeInfoDbData_1.2.6     
+## [27] Rcpp_1.0.7                  jquerylib_0.1.4            
+## [29] vctrs_0.3.8                 Biostrings_2.60.2          
+## [31] xfun_0.25                   stringr_1.4.0              
+## [33] openxlsx_4.2.4              mime_0.11                  
+## [35] lifecycle_1.0.0             renv_0.15.4                
+## [37] gtools_3.9.2                edgeR_3.34.0               
+## [39] zlibbioc_1.38.0             MASS_7.3-54                
+## [41] zoo_1.8-9                   scales_1.1.1               
+## [43] promises_1.2.0.1            MatrixGenerics_1.4.3       
+## [45] SummarizedExperiment_1.22.0 RColorBrewer_1.1-2         
+## [47] yaml_2.2.1                  quantmod_0.4.18            
+## [49] curl_4.3.2                  memoise_2.0.0              
+## [51] sass_0.4.0                  rpart_4.1-15               
+## [53] stringi_1.7.4               RSQLite_2.2.8              
+## [55] highr_0.9                   TTR_0.24.2                 
+## [57] caTools_1.18.2              zip_2.2.0                  
+## [59] BiocParallel_1.26.2         GenomeInfoDb_1.28.2        
+## [61] rlang_0.4.11                pkgconfig_2.0.3            
+## [63] matrixStats_0.60.1          bitops_1.0-7               
+## [65] evaluate_0.14               ROCR_1.0-11                
+## [67] bit_4.0.4                   samr_3.0                   
+## [69] DESeq2_1.32.0               R6_2.5.1                   
+## [71] combinat_0.0-8              DelayedArray_0.18.0        
+## [73] DBI_1.1.1                   withr_2.4.2                
+## [75] pillar_1.6.2                xts_0.12.1                 
+## [77] survival_3.2-13             KEGGREST_1.32.0            
+## [79] abind_1.4-5                 RCurl_1.98-1.4             
+## [81] tibble_3.1.4                crayon_1.4.1               
+## [83] shinyFiles_0.9.0            KernSmooth_2.23-20         
+## [85] utf8_1.2.2                  rmarkdown_2.10             
+## [87] locfit_1.5-9.4              blob_1.2.2                 
+## [89] digest_0.6.27               xtable_1.8-4               
+## [91] httpuv_1.6.2                munsell_0.5.0              
+## [93] bslib_0.2.5.1</code></pre>
 </div>
 <p><strong>End of document</strong></p>
 </div>
